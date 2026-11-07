@@ -9,21 +9,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <script src="js/theme.js"></script>
 </head>
 <body>
 <header class="site-header">
   <a class="wordmark" href="index.html">LEMA<span>.</span></a>
-  <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
   <nav class="nav"><a class="active" href="index.html">Home</a>
     <a href="about.html">About</a><a href="projects.html">Projects</a>
     <a href="design.html">Graphic Design</a><a href="index.html#contact" class="nav-contact">Contact ↗</a>
   </nav>
+  <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode" aria-pressed="false"><span aria-hidden="true">☾</span></button>
+  <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
 </header>
 <main>
 <section class="hero wrap">
   <div class="hero-copy">
     <p class="eyebrow">
-      <span class="status-dot"></span> IT - CREATIVE DESIGNER
+      <span class="status-dot"></span> IT · CREATIVE DESIGNER
     </p>
       <h1>Technology with purpose.<br>
         <span>Design with character.</span>
@@ -49,20 +52,25 @@
     </div>
     <div class="art-grid">
       <div class="art-cell art-blue">IT<span>01</span></div>
-      <div class="art-cell art-yellow"> <span>02</span></div>
+      <div class="art-cell art-yellow">✳<span>02</span></div>
       <div class="art-cell art-dark">{ }</div>
       <div class="art-cell art-paper">LEMA<br>STUDIO<span>03</span></div>
     </div>
-    <p class="art-foot">CURIOUS BY NATURE. PRACTICAL BY DESIGN.</p>
   </div>
 </section>
 <section class="ticker">
   <div>WEB DEVELOPMENT 
+    <span>✳</span> 
     DATA ANALYTICS 
+    <span>✳</span> 
     NETWORKING 
+    <span>✳</span> 
     GRAPHIC DESIGN 
+    <span>✳</span> 
     WEB DEVELOPMENT 
+    <span>✳</span> 
     DATA ANALYTICS 
+    <span>✳</span>
   </div>
 </section>
 <section class="section wrap">
@@ -75,28 +83,36 @@
   </div>
   <div class="service-grid"><article class="service">
     <span class="service-number">01</span>
-    <div class="service-icon">⌘</div>
+    <div class="service-icon" aria-hidden="true">
+      <img src="images/web.jpg" alt="">
+    </div>
     <h3>Web & Software</h3>
     <p>Responsive websites, front-end interfaces and server-side functionality built around real needs.</p>
-    <a href="projects.html">View projects ↗</a>
+    <a href="projects.html#web-projects">View projects ↗</a>
   </article>
   <article class="service">
     <span class="service-number">02</span>
-    <div class="service-icon">▥</div>
-    <h3>Data & Machine Learning</h3>
-    <p>Python-based data analysis, preprocessing and applied machine-learning projects.</p>
-    <a href="projects.html#machine-learning">View projects ↗</a>
+    <div class="service-icon" aria-hidden="true">
+      <img src="images/data.jpg" alt="">
+    </div>
+    <h3>Data Analytics</h3>
+    <p>Preparing, exploring and presenting data to make information easier to understand.</p>
+    <a href="about.html#skills">Explore skills ↗</a>
   </article>
   <article class="service">
     <span class="service-number">03</span>
-    <div class="service-icon">⌁</div>
+    <div class="service-icon" aria-hidden="true">
+      <img src="images/system.jpg" alt="">
+    </div>
     <h3>Networking & Systems</h3>
     <p>Network simulations, IP addressing, basic troubleshooting and server configuration.</p>
     <a href="projects.html#networking">View projects ↗</a>
   </article>
   <article class="service">
     <span class="service-number">04</span>
-    <div class="service-icon">✳</div>
+    <div class="service-icon" aria-hidden="true">
+      <img src="images/design.jpg" alt="">
+    </div>
     <h3>Graphic Design</h3>
     <p>Logos, flyers, posters and promotional visuals made to fit each client and purpose.</p>
     <a href="design.html">Browse design work ↗</a>
@@ -106,20 +122,17 @@
 <section class="feature-band">
   <div class="wrap feature-inner">
     <div>
-      <p class="eyebrow">02 / SELECTED PROJECT</p>
-      <h2>Using machine learning<br>for early ASD screening.</h2>
-      <p>A research project exploring how screening questionnaire responses can support an autism spectrum disorder detection web application.</p>
-      <a class="button button-light" href="projects.html#machine-learning">Read the project <span>↗</span></a>
+      <p class="eyebrow">02 / SYSTEMS IN PRACTICE</p>
+      <h2>Building connections<br>that work.</h2>
+      <p>A network simulation exploring practical foundations: clear addressing, connected devices and reliable communication.</p>
+      <a class="button button-light" href="projects.html#networking">Explore the network project <span>↗</span></a>
     </div>
     <div class="feature-visual">
       <div class="feature-window">
-        <div class="window-top"><i></i><i></i><i></i><span>screening_model.py</span>
+        <div class="window-top"><i></i><i></i><i></i><span>network_setup</span>
         </div>
-        <div class="code-lines"><p><b>01</b> 
-          <span>from</span> sklearn.ensemble 
-          <span>import</span></p><p><b>02</b> RandomForestClassifier</p><p><b>03</b> </p><p><b>04</b> model = RandomForestClassifier()</p><p><b>05</b> model.fit(X_train, y_train)</p><p><b>06</b> prediction = model.predict(X_test)</p>
-        </div>
-        <div class="window-tag">PYTHON / MACHINE LEARNING</div>
+          <img class="network-photo" src="images/cisco.jpg" alt="Close-up of network equipment connected by ethernet cables" loading="lazy">
+          <div class="window-tag">NETWORKING / SYSTEMS</div>
       </div>
     </div>
   </div>
@@ -127,7 +140,7 @@
 <section class="section wrap">
   <div class="section-heading">
     <div>
-      <p class="eyebrow">03 / BACKGROUND</p>
+      <p class="eyebrow">04 / BACKGROUND</p>
       <h2>Learning by building.</h2>
     </div>
     <a class="text-link" href="about.html">View my background ↗</a>
@@ -160,6 +173,15 @@
       </div>
       <span class="timeline-type">EDUCATION</span>
     </div>
+     <div class="timeline-row">
+      <span class="timeline-date">2017—2018</span>
+      <div>
+        <h3>High School Certificate</h3>
+        <p class="timeline-place">Lycée Hérédité </p>
+        <p>Science-focused studies in Mathematics, Biology, Physics and Chemistry.</p>
+      </div>
+      <span class="timeline-type">EDUCATION</span>
+    </div>
   </div>
 </section>
 <section class="contact-section" id="contact">
@@ -178,11 +200,11 @@
         <span>Phone</span>
         <strong>+250 791 376 528 ↗</strong>
       </a>
-      <a href="www.linkedin.com/in/lema-namaissou-seknewna-80b86239a" target="_blank" rel="noreferrer">
+      <a href="https://www.linkedin.com/in/lema-namaissou-seknewna-80b86239a" target="_blank" rel="noreferrer">
         <span>Professional profile</span>
         <strong>Connect on LinkedIn ↗</strong>
       </a>
-      <a href="https://github.com/" target="_blank" rel="noreferrer">
+      <a href="https://github.com/Namaissou" target="_blank" rel="noreferrer">
         <span>Code</span>
         <strong>Explore GitHub ↗</strong>
       </a>

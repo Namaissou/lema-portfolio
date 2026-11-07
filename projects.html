@@ -2,15 +2,16 @@
 <html lang="en">
     <head><meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Selected software, machine learning, networking and server projects by Namaissou Seknewna Lema.">
+        <meta name="description" content="Selected software, networking and server projects by Namaissou Seknewna Lema.">
         <title>Projects — Namaissou Seknewna Lema</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/theme.css">
+        <script src="js/theme.js"></script>
         <script defer src="js/main.js"></script>
     </head>
     <body>
         <header class="site-header">
             <a class="wordmark" href="index.html">LEMA<span>.</span></a>
-            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
             <nav class="nav">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
@@ -18,66 +19,73 @@
                 <a href="design.html">Graphic Design</a>
                 <a class="nav-contact" href="index.html#contact">Contact ↗</a>
             </nav>
+            <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode" aria-pressed="false"><span aria-hidden="true">☾</span></button>
+            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
         </header>
         <main>
             <section class="page-hero wrap">
                 <p class="eyebrow">PROJECTS / 02</p>
                 <h1>Work in progress.<br><span>Lessons in every build.</span></h1>
-                <p class="hero-lede">A selection of academic and practical work across software, machine learning, networking and server configuration.</p>
+            <p class="hero-lede">A selection of practical work in networking, system administration and software development.</p>
+            </section>
+            <section id="web-projects" class="section wrap project-list web-projects-section">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">WEB &amp; SOFTWARE</p>
+                        <h2>Interfaces built to be useful.</h2>
+                    </div>
+                    <p class="section-intro">Selected websites and software projects, with interface previews and links to explore the live work.</p>
+                </div>
+                <!-- Copy this project row for each new web project. Update its image, title, description, technologies, and link. -->
+                <article class="project-row web-project-row" id="gamabe-website">
+                    <div class="project-number">01</div>
+                    <div class="project-visual web-project-visual">
+                        <div class="visual-label">WEB APPLICATION / BUSINESS WEBSITE</div>
+                        <img src="images/gamabe.png" alt="Screenshot of the Gamabe Gas Trading website" loading="lazy">
+                        <p>BUSINESS WEBSITE - RESPONSIVE INTERFACE</p>
+                    </div>
+                    <div class="project-copy">
+                        <p class="eyebrow">WEB &amp; SOFTWARE PROJECT</p>
+                        <h2>Gamabe LTD — Business Website</h2>
+                        <p>Developed and maintained a business website for Gamabe Gas Trading, with product browsing and an online ordering interface.</p>
+                        <h3>Project highlights</h3>
+                        <ul>
+                            <li>Responsive business website interface</li>
+                            <li>Product catalogue and ordering flow</li>
+                            <li>Multi-language website experience</li>
+                        </ul>
+                        <a class="web-project-link" href="https://gamabeltd.com/" target="_blank" rel="noopener noreferrer">Visit live project <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="project-row web-project-row" id="gamabe-website">
+                    <div class="project-number">02</div>
+                    <div class="project-visual web-project-visual">
+                        <div class="visual-label">WEB APPLICATION / BUSINESS WEBSITE</div>
+                        <img src="images/cares.png" alt="Screenshot of the Gamabe Gas Trading website" loading="lazy">
+                        <p>BUSINESS WEBSITE - RESPONSIVE INTERFACE</p>
+                    </div>
+                    <div class="project-copy">
+                        <p class="eyebrow">WEB &amp; SOFTWARE PROJECT</p>
+                        <h2>CARES SARL — Corporate Website</h2>
+                        <p>Designed and developed a professional website for CARES SARL, showcasing its research activities, services, expertise, and projects.</p>
+                        <h3>Project highlights</h3>
+                        <ul>
+                            <li>Responsive corporate website design</li>
+                            <li>Services and project portfolio sections</li>
+                            <li>Contact form and company information</li>
+                        </ul>
+                        <a class="web-project-link" href="https://startling-frangollo-576f2c.netlify.app/" target="_blank" rel="noopener noreferrer">Visit live project <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
             </section>
             <section class="section wrap project-list">
-                <article class="project-row" id="machine-learning">
-                    <div class="project-number">01</div>
-                    <div class="project-visual visual-ml">
-                        <div class="visual-label">RESEARCH / MACHINE LEARNING</div>
-                        <div class="ml-diagram"><div>SCREENING<br>QUESTIONNAIRE</div>
-                        <span>→</span>
-                        <div>DATA<br>PROCESSING</div>
-                        <span>→</span>
-                        <div class="ml-result">MODEL<br>PREDICTION</div>
-                    </div>
-                    <p>PYTHON · SCIKIT-LEARN · WEB APPLICATION</p>
-                </div>
-                <div class="project-copy">
-                    <p class="eyebrow">RESEARCH PROJECT</p>
-                    <h2>Detection of Autism Spectrum Disorder using Machine Learning</h2>
-                    <p>Developed a machine-learning-based web application concept for early ASD screening. Users complete screening questionnaires and receive prediction results.</p>
-                    <h3>Focus areas</h3>
-                    <ul>
-                        <li>Questionnaire-driven input flow</li>
-                        <li>Machine learning prediction workflow</li>
-                        <li>Python-based application development</li>
-                    </ul>
-                    <p class="small-note">This is a screening-support research project, not a replacement for professional diagnosis.</p>
-                </div>
-            </article>
             <article class="project-row" id="networking">
-                <div class="project-number">02</div>
+                <div class="project-number">03</div>
                 <div class="project-visual visual-network">
-                    <div class="visual-label">NETWORK LAB / SIMULATION</div>
-                    <svg viewBox="0 0 420 220" role="img" aria-label="Illustration of a simple network topology">
-                        <g stroke="#9fc5d8" stroke-width="2">
-                            <path d="M210 55 L105 115 M210 55 L315 115 M105 145 L65 185 M105 145 L145 185 M315 145 L275 185 M315 145 L355 185"/></g>
-                            <g fill="#f6f4ef" stroke="#242d36" stroke-width="2">
-                                <rect x="170" y="25" width="80" height="40" rx="5"/>
-                                <rect x="65" y="105" width="80" height="40" rx="5"/>
-                                <rect x="275" y="105" width="80" height="40" rx="5"/>
-                                <rect x="35" y="180" width="60" height="28" rx="4"/>
-                                <rect x="115" y="180" width="60" height="28" rx="4"/>
-                                <rect x="245" y="180" width="60" height="28" rx="4"/>
-                                <rect x="325" y="180" width="60" height="28" rx="4"/>
-                            </g>
-                            <g fill="#242d36" font-size="11" text-anchor="middle" font-family="Arial">
-                                <text x="210" y="49">ROUTER</text>
-                                <text x="105" y="129">SWITCH A</text>
-                                <text x="315" y="129">SWITCH B</text>
-                                <text x="65" y="198">PC 01</text>
-                                <text x="145" y="198">PC 02</text>
-                                <text x="275" y="198">PC 03</text>
-                                <text x="355" y="198">PC 04</text>
-                            </g>
-                        </svg>
-                        <p>CISCO PACKET TRACER · TCP/IP · SUBNETTING</p>
+                        <div class="visual-label">NETWORK LAB / SIMULATION</div>
+                        <img class="project-visual-image" src="images/cisco.jpg" alt="Cisco networking equipment used to represent the network setup project" loading="lazy">
+                        <div class="project-image-placeholder">Add your network project image<br><span>Replace images/cisco.jpg</span></div>
+                        <p>CISCO PACKET TRACER - TCP/IP - SUBNETTING</p>
                     </div>
                     <div class="project-copy">
                         <p class="eyebrow">ACADEMIC PROJECT</p>
@@ -92,14 +100,11 @@
                     </div>
                 </article>
                 <article class="project-row" id="server">
-                    <div class="project-number">03</div>
+                    <div class="project-number">04</div>
                     <div class="project-visual visual-server">
                         <div class="visual-label">SYSTEMS / SERVER LAB</div>
-                        <div class="server-stack">
-                            <div><span>01</span><strong>DHCP</strong><small>Address allocation</small></div>
-                            <div><span>02</span><strong>DNS</strong><small>Name resolution</small></div>
-                            <div><span>03</span><strong>ACCESS</strong><small>Users & permissions</small></div>
-                        </div>
+                        <img class="project-visual-image" src="images/Servidor%20web.jpg" alt="Server connected to client computers for the server setup project" loading="lazy">
+                        <div class="project-image-placeholder">Add your server project image<br><span>Replace images/Servidor web.jpg</span></div>
                         <p>VIRTUAL SERVER ENVIRONMENT</p>
                     </div>
                     <div class="project-copy">

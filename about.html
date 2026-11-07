@@ -4,17 +4,20 @@
         <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="About Namaissou Seknewna Lema, IT and creative professional.">
         <title>About — Namaissou Seknewna Lema</title><link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/theme.css">
+        <script src="js/theme.js"></script>
         <script defer src="js/main.js"></script>
     </head>
     <body>
         <header class="site-header"><a class="wordmark" href="index.html">LEMA<span>.</span></a>
-            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
             <nav class="nav">
                 <a href="index.html">Home</a>
                 <a class="active" href="about.html">About</a>
                 <a href="projects.html">Projects</a><a href="design.html">Graphic Design</a>
                 <a class="nav-contact" href="index.html#contact">Contact ↗</a>
             </nav>
+            <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode" aria-pressed="false"><span aria-hidden="true">☾</span></button>
+            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
         </header>
         <main>
             <section class="page-hero wrap">
@@ -33,37 +36,39 @@
                         <p>I value practical learning, clear communication, teamwork and careful delivery. I’m interested in opportunities that will help me grow while allowing me to contribute to meaningful projects.</p>
                     </div>
                 </section>
-                <section class="section skills-section">
+                <section id="skills" class="section skills-section">
                     <div class="wrap">
                         <p class="eyebrow">TOOLS & KNOWLEDGE</p>
-                        <h2>Skills I’m building on.</h2>
-                        <div class="skills-grid"><div>
-                            <h3>Programming & Web</h3>
-                            <p>Python - Java - JavaScript - HTML - CSS - SQL</p>
-                        </div>
-                        <div>
-                            <h3>Data & Machine Learning</h3>
-                            <p>Pandas - NumPy - Scikit-learn - Matplotlib - Seaborn</p>
-                        </div>
-                        <div>
-                            <h3>Networking & Security</h3>
-                            <p>TCP/IP - Subnetting · Cisco Packet Tracer - Wireshark - Basic network security</p>
-                        </div>
-                        <div>
-                            <h3>Systems & Databases</h3>
-                            <p>Linux - Kali Linux - VirtualBox - Windows Server - SQLite - MySQL - Firebase Firestore</p>
-                        </div>
-                        <div>
-                            <h3>Creative Work</h3>
-                            <p>Logo design - Flyers - Posters - Promotional graphics</p>
-                        </div>
-                        <div>
-                            <h3>Professional Skills</h3>
-                            <p>Problem-solving · Teamwork · Communication · Time management · Client relations</p>
+                        <h2>Tools I work with.</h2>
+                        <p class="skills-intro">A few of the creative and technical tools I use to bring ideas to life.</p>
+                        <div class="skills-showcase">
+                            <section class="skill-cloud">
+                                <h3>Graphic design</h3>
+                                <div class="skill-cloud-canvas" role="list" aria-label="Graphic design software">
+                                    <div class="skill-token" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/photoshop/photoshop-original.svg" alt="" loading="lazy"><span>Photoshop</span></div>
+                                    <div class="skill-token" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/illustrator/illustrator-plain.svg" alt="" loading="lazy"><span>Illustrator</span></div>
+                                    <div class="skill-token" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/aftereffects/aftereffects-original.svg" alt="" loading="lazy"><span>After Effects</span></div>
+                                    <div class="skill-token" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/canva/canva-original.svg" alt="" loading="lazy"><span>Canva</span></div>
+                                    <div class="skill-token" role="listitem"><span class="skill-wordmark skill-affinity" aria-hidden="true">affinity</span><span>Affinity</span></div>
+                                    <div class="skill-token" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/premierepro/premierepro-original.svg" alt="" loading="lazy"><span>Premiere Pro</span></div>
+                                </div>
+                            </section>
+                            <section class="skill-cloud">
+                                <h3>Programming &amp; databases</h3>
+                                <div class="skill-cloud-canvas" role="list" aria-label="Programming languages and databases">
+                                    <div class="skill-token" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/python/python-original.svg" alt="" loading="lazy"><span>Python</span></div>
+                                    <div class="skill-token" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/r/r-original.svg" alt="" loading="lazy"><span>R</span></div>
+                                    <div class="skill-token" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/html5/html5-original.svg" alt="" loading="lazy"><span>HTML</span></div>
+                                    <div class="skill-token" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/css3/css3-original.svg" alt="" loading="lazy"><span>CSS</span></div>
+                                    <div class="skill-token" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/javascript/javascript-original.svg" alt="" loading="lazy"><span>JavaScript</span></div>
+                                    <div class="skill-token" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/java/java-original.svg" alt="" loading="lazy"><span>Java</span></div>
+                                    <div class="skill-token" role="listitem"><span class="skill-wordmark skill-sql" aria-hidden="true">SQL</span><span>SQL</span></div>
+                                    <div class="skill-token" role="listitem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mysql/mysql-original.svg" alt="" loading="lazy"><span>MySQL</span></div>
+                                </div>
+                            </section>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
             <section class="section wrap">
                 <p class="eyebrow">CERTIFICATIONS & TRAINING</p>
                 <h2>Continuous learning.</h2>

@@ -1,11 +1,11 @@
 # LEMA — Personal Portfolio
 
-A responsive, multi-page portfolio built with plain HTML, CSS and JavaScript. No framework, build step or AI-generated UI dependency is required.
+A responsive, multi-page portfolio built with plain HTML, CSS and JavaScript. No framework or build step is required.
 
 ## Pages
 - `index.html` — introduction, services, experience and contact details.
 - `about.html` — background, skills and training/certifications.
-- `projects.html` — machine-learning research, network simulation and server simulation.
+- `projects.html` — network simulation and server configuration projects.
 - `design.html` — public graphic design gallery.
 - `admin.html` — authenticated artwork upload and deletion interface.
 
@@ -52,6 +52,8 @@ using (bucket_id = 'portfolio-designs');
 - Replace or add project descriptions only if they accurately reflect your work.
 - Keep your resume PDF private unless you intentionally want to publish it.
 - The resume says the bachelor's coursework is complete and the graduation ceremony is scheduled for November 2026; the site wording reflects that rather than claiming the ceremony has already happened.
+- Add web projects by copying the `web-project-row` article in `projects.html`. Update its screenshot path and alt text, title, description, technologies, and live project URL.
+- Replace `images/cisco.jpg` and `images/Servidor web.jpg` with your own networking and server project screenshots when ready.
 
 ## Design approach
-Editorial typography, warm neutral surfaces, restrained blue/yellow accents, hand-built CSS compositions and custom project illustrations. No generic AI portrait, chatbot widget, fake metrics or fabricated client testimonials.
+Clear typography, considered spacing, a restrained green-and-neutral palette, hand-built CSS compositions and custom project illustrations. A theme toggle switches between light and dark appearances and remembers the visitor’s choice.
