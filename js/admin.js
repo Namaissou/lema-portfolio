@@ -34,7 +34,7 @@
   });
   uploadForm.addEventListener('submit', async e => {
     e.preventDefault(); const file = fileInput.files[0]; if (!file) return;
-    if (!/^image\/(jpeg|png|webp|gif)$/.test(file.type)) { setMessage(uploadMessage, 'Please upload a JPG, PNG, WEBP or GIF image.', true); return; }
+    if (!/^image\/(jpeg|png|webp|gif)$/.test(file.type)) { setMessage(uploadMessage, 'Please upload a JPG, PDF, PNG, WEBP or GIF image.', true); return; }
     if (file.size > 8 * 1024 * 1024) { setMessage(uploadMessage, 'Maximum file size is 8 MB.', true); return; }
     const title = $('art-title').value.trim();
     const safeTitle = title.normalize('NFKD').replace(/[^a-zA-Z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 65) || 'artwork';
