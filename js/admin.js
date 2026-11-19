@@ -48,7 +48,7 @@
   });
   async function loadAdminGallery() {
     const root = $('admin-gallery'); root.innerHTML = '<p class="small-note">Loading…</p>';
-    const { data, error } = await client.storage.from(bucket).list('', { limit: 100, sortBy: { column: 'created_at', order: 'desc' } });
+    const { data, error } = await client.storage.from(bucket).list('', { limit: 200, sortBy: { column: 'created_at', order: 'desc' } });
     if (error) { root.textContent = `Could not list files: ${error.message}`; return; }
     const files = (data || []).filter(f => f.name && !f.name.startsWith('.')).filter(f => /\.(jpe?g|png|webp|gif)$/i.test(f.name));
     root.innerHTML = '';
